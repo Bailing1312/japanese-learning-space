@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日本語学習空間 | LingLing の JLPT 语料库</title>
+  <meta name="description" content="JLPT N5~N1 生词、语法、翻译语料库 — LingLing の日本語学習空間">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 顶部装饰：樱花 + 波浪 -->
+  <div class="header-bg">
+    <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none">
+      <path d="M0,60 C240,100 480,20 720,60 C960,100 1200,20 1440,60 L1440,120 L0,120 Z" fill="#faf8f5"/>
+    </svg>
+  </div>
+
+  <header class="site-header">
+    <div class="brand">
+      <span class="sakura">🌸</span>
+      <h1>LingLing <span class="brand-jp">の 日本語学習空間</span></h1>
+    </div>
+    <p class="tagline">JLPT N5 → N1 · 生词 · 语法 · 翻译 · 语料库</p>
+  </header>
+
+  <main class="container">
+
+    <!-- 筛选器 -->
+    <section class="filters" aria-label="筛选器">
+      <div class="filter-group">
+        <label class="filter-label">等级 Level</label>
+        <div class="chips" id="level-chips">
+          <button class="chip active" data-level="ALL">全部</button>
+          <button class="chip" data-level="N5">N5</button>
+          <button class="chip" data-level="N4">N4</button>
+          <button class="chip" data-level="N3">N3</button>
+          <button class="chip" data-level="N2">N2</button>
+          <button class="chip" data-level="N1">N1</button>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <label class="filter-label">类型 Type</label>
+        <div class="chips" id="type-chips">
+          <button class="chip active" data-type="ALL">全部</button>
+          <button class="chip" data-type="vocab">生词</button>
+          <button class="chip" data-type="grammar">语法</button>
+          <button class="chip" data-type="translation">翻译</button>
+        </div>
+      </div>
+
+      <div class="filter-group search">
+        <label class="filter-label" for="search">搜索</label>
+        <input id="search" type="search" placeholder="日文 / 中文 / 罗马音 都能搜…" autocomplete="off">
+      </div>
+    </section>
+
+    <!-- 统计 -->
+    <section class="stats">
+      <div class="stat-item">
+        <div class="stat-num" id="stat-total">0</div>
+        <div class="stat-label">总词条</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" id="stat-vocab">0</div>
+        <div class="stat-label">生词</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" id="stat-grammar">0</div>
+        <div class="stat-label">语法</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" id="stat-translation">0</div>
+        <div class="stat-label">翻译</div>
+      </div>
+    </section>
+
+    <!-- 卡片列表 -->
+    <section class="cards" id="cards" aria-live="polite"></section>
+
+    <div class="empty" id="empty" hidden>
+      <div class="empty-icon">🍃</div>
+      <p>暂时没有匹配的语料，去 <code>data/</code> 文件夹添加吧～</p>
+    </div>
+
+    <!-- 添加引导 -->
+    <section class="add-guide">
+      <h2>📝 如何添加新语料</h2>
+      <ol>
+        <li>打开 GitHub 仓库的 <code>data/</code> 文件夹</li>
+        <li>选择对应的等级文件夹（如 <code>N5/vocab.json</code>）</li>
+        <li>点击右上角 ✏️ 编辑按钮，添加新的词条</li>
+        <li>提交后，网站会在 1 分钟内自动更新</li>
+      </ol>
+      <a class="cta" href="https://github.com/Bailing1312/japanese-learning-space/tree/main/data" target="_blank" rel="noopener">
+        👉 去添加语料
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>🌸 由 LingLing 整理 · Powered by GitHub Pages</p>
+    <p class="footer-links">
+      <a href="https://github.com/Bailing1312/japanese-learning-space" target="_blank" rel="noopener">GitHub</a>
+      ·
+      <a href="https://github.com/Bailing1312/japanese-learning-space/blob/main/README.md" target="_blank" rel="noopener">使用说明</a>
+    </p>
+  </footer>
+
+  <script src="data-loader.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
