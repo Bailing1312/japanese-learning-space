@@ -1,0 +1,30 @@
+[
+  {
+    "jp": "〜は〜です",
+    "romaji": "~ wa ~ desu",
+    "meaning": "〜是〜",
+    "note": "最基础的判断句,A は B です",
+    "example_jp": "私は学生です。",
+    "example_cn": "我是学生。"
+  },
+  {
+    "jp": "〜ます",
+    "romaji": "~ masu",
+    "meaning": "动词敬体现在时",
+    "note": "动词敬体,书信用得多",
+    "example_jp": "毎日勉強します。",
+    "example_cn": "每天学习。"
+  },
+  {
+    "jp": "〜てください",
+    "romaji": "~ te kudasai",
+    "meaning": "请〜",
+    "note": "礼貌请求,〜て形 + ください"
+  },
+  {
+    "jp": "〜てもいい",
+    "romaji": "~ temo ii",
+    "meaning": "可以〜",
+    "note": "征求许可,~ても いいですか"
+  }
+]
