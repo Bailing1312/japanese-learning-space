@@ -1,0 +1,35 @@
+[
+  {
+    "jp": "こんにちは",
+    "romaji": "konnichiwa",
+    "meaning": "你好（白天问候）",
+    "example_jp": "こんにちは、田中さん。",
+    "example_cn": "你好，田中。"
+  },
+  {
+    "jp": "ありがとう",
+    "romaji": "arigatou",
+    "meaning": "谢谢",
+    "example_jp": "ありがとうございます。",
+    "example_cn": "非常感谢。"
+  },
+  {
+    "jp": "日本",
+    "romaji": "nihon / nippon",
+    "meaning": "日本",
+    "note": "两个读音都常用,nihon 是普通说法"
+  },
+  {
+    "jp": "私",
+    "romaji": "watashi",
+    "meaning": "我",
+    "note": "女性/正式场合多用 watashi,男性随便场合用 boku/ore"
+  },
+  {
+    "jp": "食べる",
+    "romaji": "taberu",
+    "meaning": "吃",
+    "example_jp": "朝ごはんを食べます。",
+    "example_cn": "吃早饭。"
+  }
+]
