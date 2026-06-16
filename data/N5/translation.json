@@ -1,0 +1,19 @@
+[
+  {
+    "jp": "今日は天気がいいですね。",
+    "romaji": "kyou wa tenki ga ii desu ne",
+    "meaning": "今天天气真好呢。",
+    "note": "〜ね 用于寻求对方共鸣",
+    "example_cn": "今天天气真好呢。"
+  },
+  {
+    "jp": "これは私の本です。",
+    "romaji": "kore wa watashi no hon desu",
+    "meaning": "这是我的书。"
+  },
+  {
+    "jp": "駅までどのぐらいかかりますか。",
+    "romaji": "eki made dono kurai kakarimasu ka",
+    "meaning": "到车站要多久?"
+  }
+]
